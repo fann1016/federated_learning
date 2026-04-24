@@ -1,0 +1,10 @@
+[FedAvgM] Round 5/50 - Avg Local Loss: 1.5814, Test Loss: 1.6104, Test Acc: 42.58%
+[FedAvgM] Round 10/50 - Avg Local Loss: 1.3560, Test Loss: 1.2896, Test Acc: 53.38%
+[FedAvgM] Round 15/50 - Avg Local Loss: 1.2200, Test Loss: 1.1535, Test Acc: 59.24%
+[FedAvgM] Round 20/50 - Avg Local Loss: 1.1309, Test Loss: 1.1612, Test Acc: 60.33%
+[FedAvgM] Round 25/50 - Avg Local Loss: 1.0691, Test Loss: 1.1321, Test Acc: 60.48%
+[FedAvgM] Round 30/50 - Avg Local Loss: 1.0193, Test Loss: 1.0147, Test Acc: 64.87%
+[FedAvgM] Round 35/50 - Avg Local Loss: 0.9774, Test Loss: 0.9674, Test Acc: 66.10%
+[FedAvgM] Round 40/50 - Avg Local Loss: 0.9287, Test Loss: 0.9800, Test Acc: 65.98%
+[FedAvgM] Round 45/50 - Avg Local Loss: 0.9097, Test Loss: 1.0334, Test Acc: 64.17%
+[FedAvgM] Round 50/50 - Avg Local Loss: 0.8817, Test Loss: 0.9184, Test Acc: 67.77%

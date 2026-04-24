@@ -1,0 +1,14 @@
+==================================================
+ALGORITHM: FedAvgM
+CONFIG SETTINGS: {'num_clients': 10, 'fraction': 0.4, 'local_epochs': 1, 'batch_size': 64, 'lr': 0.01, 'optimizer_momentum': 0.9, 'weight_decay': 0.0004, 'rounds': 300, 'eval_interval': 10, 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.5, 'server_momentum_beta': 0.9, 'nesterov': True, 'device': 'cpu', 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'wandb_project': 'federated-learning-cifar10', 'wandb_name': 'cifar10-fedavgm-paper-aligned', 'seed': 2024}
+TIMESTAMP: 20260417_164723
+==================================================
+
+[FedAvgM] Round 10/300 - Avg Local Loss: 1.2481, Test Loss: 1.9644, Test Acc: 37.64%
+[FedAvgM] Round 20/300 - Avg Local Loss: 0.7439, Test Loss: 1.2973, Test Acc: 55.24%
+[FedAvgM] Round 30/300 - Avg Local Loss: 0.5922, Test Loss: 0.9614, Test Acc: 68.21%
+[FedAvgM] Round 40/300 - Avg Local Loss: 0.5222, Test Loss: 1.2626, Test Acc: 63.60%
+[FedAvgM] Round 50/300 - Avg Local Loss: 0.4472, Test Loss: 0.9115, Test Acc: 70.65%
+[FedAvgM] Round 60/300 - Avg Local Loss: 0.3158, Test Loss: 0.6733, Test Acc: 77.92%
+[FedAvgM] Round 70/300 - Avg Local Loss: 0.3909, Test Loss: 1.5318, Test Acc: 67.40%
+[FedAvgM] Round 80/300 - Avg Local Loss: 0.3615, Test Loss: 0.6862, Test Acc: 77.37%

@@ -1,0 +1,26 @@
+Round 1/10 - Avg Local Loss: 0.4719, Test Loss: 2.2991, Test Acc: 12.18%
+Round 2/10 - Avg Local Loss: 0.4624, Test Loss: 2.2991, Test Acc: 12.18%
+Round 3/10 - Avg Local Loss: 0.4686, Test Loss: 2.2991, Test Acc: 12.18%
+Round 4/10 - Avg Local Loss: 0.4684, Test Loss: 2.2991, Test Acc: 12.18%
+Round 5/10 - Avg Local Loss: 0.4561, Test Loss: 2.2991, Test Acc: 12.18%
+Round 6/10 - Avg Local Loss: 0.4745, Test Loss: 2.2991, Test Acc: 12.18%
+Round 7/10 - Avg Local Loss: 0.4618, Test Loss: 2.2991, Test Acc: 12.18%
+Round 8/10 - Avg Local Loss: 0.4722, Test Loss: 2.2991, Test Acc: 12.18%
+Round 9/10 - Avg Local Loss: 0.4677, Test Loss: 2.2991, Test Acc: 12.18%
+  Round 10, Training Client 1...
+Traceback (most recent call last):
+  File "d:\研究生学习\论文-联邦学习\联邦学习代码\examples\run_mnist.py", line 115, in <module>
+    wandb.finish()
+  File "d:\研究生学习\论文-联邦学习\联邦学习代码\examples\run_mnist.py", line 77, in run_experiment
+    w, loss = clients[idx].train(copy.deepcopy(server.global_model))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\研究生学习\论文-联邦学习\联邦学习代码\src\federated\client.py", line 23, in train
+    loss.backward()
+  File "D:\Python\Python312\Lib\site-packages\torch\_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "D:\Python\Python312\Lib\site-packages\torch\autograd\__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "D:\Python\Python312\Lib\site-packages\torch\autograd\graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

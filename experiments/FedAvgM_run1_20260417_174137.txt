@@ -1,0 +1,7 @@
+==================================================
+ALGORITHM: FedAvgM
+CONFIG SETTINGS: {'num_clients': 10, 'fraction': 0.1, 'local_epochs': 1, 'batch_size': 64, 'lr': 0.01, 'optimizer_momentum': 0.0, 'weight_decay': 0.0004, 'rounds': 1, 'eval_interval': 1, 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.5, 'server_momentum_beta': 0.9, 'server_lr': 1.0, 'server_nesterov': True, 'client_nesterov': False, 'device': 'cpu', 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'wandb_project': 'federated-learning-cifar10', 'wandb_name': 'cifar10-fedavgm-paper-aligned', 'seed': 2024, 'repeat_id': 0, 'show_plots': False, 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\cifar10_summaries.csv'}
+TIMESTAMP: 20260417_174137
+==================================================
+
+[FedAvgM] Round 1/1 - Avg Local Loss: 2.2399, Test Loss: 2.6098, Test Acc: 10.00%

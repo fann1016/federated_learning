@@ -1,0 +1,23 @@
+==================================================
+ALGORITHM: FedAvgM
+CONFIG SETTINGS: {'num_clients': 10, 'fraction': 0.4, 'local_epochs': 1, 'batch_size': 64, 'lr': 0.01, 'optimizer_momentum': 0.9, 'weight_decay': 0.0004, 'rounds': 300, 'eval_interval': 10, 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.5, 'server_momentum_beta': 0.9, 'nesterov': True, 'device': 'cpu', 'results_path': 'D:\\研究生学习\\论文-联邦学习\\联邦学习代码', 'data_path': 'C:/Users/Fnn/CascadeProjects/federated_learning_cifar10_mnist/data', 'wandb_project': 'federated-learning-cifar10', 'wandb_name': 'cifar10-fedavgm-paper-aligned', 'seed': 2024}
+TIMESTAMP: 20260416_100518
+==================================================
+
+[FedAvgM] Round 10/300 - Avg Local Loss: 1.0905, Test Loss: 2.5496, Test Acc: 34.89%
+[FedAvgM] Round 20/300 - Avg Local Loss: 0.8068, Test Loss: 1.4659, Test Acc: 51.68%
+[FedAvgM] Round 30/300 - Avg Local Loss: 0.6694, Test Loss: 1.1424, Test Acc: 60.95%
+[FedAvgM] Round 40/300 - Avg Local Loss: 0.5307, Test Loss: 0.8932, Test Acc: 69.22%
+[FedAvgM] Round 50/300 - Avg Local Loss: 0.5171, Test Loss: 0.9221, Test Acc: 69.05%
+[FedAvgM] Round 60/300 - Avg Local Loss: 0.4061, Test Loss: 0.9663, Test Acc: 67.05%
+[FedAvgM] Round 70/300 - Avg Local Loss: 0.3760, Test Loss: 0.9187, Test Acc: 68.63%
+[FedAvgM] Round 80/300 - Avg Local Loss: 0.3653, Test Loss: 0.7583, Test Acc: 74.36%
+[FedAvgM] Round 90/300 - Avg Local Loss: 0.3048, Test Loss: 1.4195, Test Acc: 63.63%
+[FedAvgM] Round 100/300 - Avg Local Loss: 0.3191, Test Loss: 0.8973, Test Acc: 72.54%
+[FedAvgM] Round 110/300 - Avg Local Loss: 0.2753, Test Loss: 0.6360, Test Acc: 78.51%
+[FedAvgM] Round 120/300 - Avg Local Loss: 0.2572, Test Loss: 0.6544, Test Acc: 79.23%
+[FedAvgM] Round 130/300 - Avg Local Loss: 0.2927, Test Loss: 0.8181, Test Acc: 74.63%
+[FedAvgM] Round 140/300 - Avg Local Loss: 0.3178, Test Loss: 0.8215, Test Acc: 74.21%
+[FedAvgM] Round 150/300 - Avg Local Loss: 0.2506, Test Loss: 0.7772, Test Acc: 76.51%
+[FedAvgM] Round 160/300 - Avg Local Loss: 0.2786, Test Loss: 0.6340, Test Acc: 79.56%
+[FedAvgM] Round 170/300 - Avg Local Loss: 0.2591, Test Loss: 0.7874, Test Acc: 75.75%

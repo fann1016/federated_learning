@@ -1,0 +1,56 @@
+==================================================
+ALGORITHM: FedAvgM
+CONFIG SETTINGS: {'num_clients': 100, 'fraction': 0.1, 'local_epochs': 1, 'batch_size': 64, 'lr': 0.01, 'optimizer_momentum': 0.0, 'weight_decay': 0.0004, 'rounds': 500, 'eval_interval': 10, 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.5, 'server_momentum_beta': 0.9, 'server_lr': 1.0, 'server_nesterov': True, 'client_nesterov': False, 'device': 'cpu', 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'wandb_project': 'federated-learning-cifar10', 'wandb_name': 'cifar10-fedavgm-paper-aligned', 'seed': 2024, 'repeat_id': 0, 'show_plots': False, 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\cifar10_summaries.csv'}
+TIMESTAMP: 20260417_174840
+==================================================
+
+[FedAvgM] Round 10/500 - Avg Local Loss: 2.2882, Test Loss: 2.2993, Test Acc: 10.00%
+[FedAvgM] Round 20/500 - Avg Local Loss: 1.8871, Test Loss: 2.1942, Test Acc: 17.81%
+[FedAvgM] Round 30/500 - Avg Local Loss: 1.7272, Test Loss: 2.0299, Test Acc: 26.04%
+[FedAvgM] Round 40/500 - Avg Local Loss: 1.5186, Test Loss: 1.8569, Test Acc: 31.97%
+[FedAvgM] Round 50/500 - Avg Local Loss: 1.5198, Test Loss: 1.7899, Test Acc: 33.92%
+[FedAvgM] Round 60/500 - Avg Local Loss: 1.3970, Test Loss: 1.7546, Test Acc: 33.94%
+[FedAvgM] Round 70/500 - Avg Local Loss: 1.3265, Test Loss: 1.6116, Test Acc: 40.28%
+[FedAvgM] Round 80/500 - Avg Local Loss: 1.2722, Test Loss: 1.6870, Test Acc: 38.05%
+[FedAvgM] Round 90/500 - Avg Local Loss: 1.2927, Test Loss: 1.4585, Test Acc: 45.87%
+[FedAvgM] Round 100/500 - Avg Local Loss: 1.1278, Test Loss: 1.4204, Test Acc: 48.55%
+[FedAvgM] Round 110/500 - Avg Local Loss: 1.1936, Test Loss: 1.3928, Test Acc: 49.31%
+[FedAvgM] Round 120/500 - Avg Local Loss: 1.0356, Test Loss: 1.5351, Test Acc: 42.58%
+[FedAvgM] Round 130/500 - Avg Local Loss: 0.9686, Test Loss: 1.2839, Test Acc: 53.45%
+[FedAvgM] Round 140/500 - Avg Local Loss: 1.0699, Test Loss: 1.2456, Test Acc: 55.46%
+[FedAvgM] Round 150/500 - Avg Local Loss: 0.9523, Test Loss: 1.2459, Test Acc: 55.17%
+[FedAvgM] Round 160/500 - Avg Local Loss: 0.9465, Test Loss: 1.1286, Test Acc: 59.58%
+[FedAvgM] Round 170/500 - Avg Local Loss: 0.8606, Test Loss: 1.1749, Test Acc: 57.36%
+[FedAvgM] Round 180/500 - Avg Local Loss: 0.8280, Test Loss: 1.0582, Test Acc: 61.74%
+[FedAvgM] Round 190/500 - Avg Local Loss: 0.8504, Test Loss: 1.0146, Test Acc: 63.92%
+[FedAvgM] Round 200/500 - Avg Local Loss: 0.7934, Test Loss: 0.9568, Test Acc: 66.50%
+[FedAvgM] Round 210/500 - Avg Local Loss: 0.8367, Test Loss: 0.8920, Test Acc: 68.96%
+[FedAvgM] Round 220/500 - Avg Local Loss: 0.7956, Test Loss: 0.8788, Test Acc: 69.21%
+[FedAvgM] Round 230/500 - Avg Local Loss: 0.7045, Test Loss: 0.8720, Test Acc: 69.45%
+[FedAvgM] Round 240/500 - Avg Local Loss: 0.6756, Test Loss: 0.8346, Test Acc: 71.01%
+[FedAvgM] Round 250/500 - Avg Local Loss: 0.6653, Test Loss: 0.8204, Test Acc: 71.85%
+[FedAvgM] Round 260/500 - Avg Local Loss: 0.5827, Test Loss: 0.8271, Test Acc: 71.54%
+[FedAvgM] Round 270/500 - Avg Local Loss: 0.6356, Test Loss: 0.8369, Test Acc: 70.50%
+[FedAvgM] Round 280/500 - Avg Local Loss: 0.6367, Test Loss: 0.7944, Test Acc: 72.13%
+[FedAvgM] Round 290/500 - Avg Local Loss: 0.6508, Test Loss: 0.7553, Test Acc: 73.42%
+[FedAvgM] Round 300/500 - Avg Local Loss: 0.6533, Test Loss: 0.7281, Test Acc: 74.66%
+[FedAvgM] Round 310/500 - Avg Local Loss: 0.5736, Test Loss: 0.7072, Test Acc: 76.01%
+[FedAvgM] Round 320/500 - Avg Local Loss: 0.5907, Test Loss: 0.7102, Test Acc: 75.61%
+[FedAvgM] Round 330/500 - Avg Local Loss: 0.5023, Test Loss: 0.7317, Test Acc: 74.98%
+[FedAvgM] Round 340/500 - Avg Local Loss: 0.5673, Test Loss: 0.7200, Test Acc: 75.44%
+[FedAvgM] Round 350/500 - Avg Local Loss: 0.5345, Test Loss: 0.6910, Test Acc: 76.55%
+[FedAvgM] Round 360/500 - Avg Local Loss: 0.5422, Test Loss: 0.7342, Test Acc: 75.40%
+[FedAvgM] Round 370/500 - Avg Local Loss: 0.4844, Test Loss: 0.6949, Test Acc: 76.07%
+[FedAvgM] Round 380/500 - Avg Local Loss: 0.4903, Test Loss: 0.6294, Test Acc: 78.10%
+[FedAvgM] Round 390/500 - Avg Local Loss: 0.4649, Test Loss: 0.6503, Test Acc: 77.58%
+[FedAvgM] Round 400/500 - Avg Local Loss: 0.4941, Test Loss: 0.7041, Test Acc: 75.80%
+[FedAvgM] Round 410/500 - Avg Local Loss: 0.4561, Test Loss: 0.6779, Test Acc: 76.73%
+[FedAvgM] Round 420/500 - Avg Local Loss: 0.4659, Test Loss: 0.5918, Test Acc: 79.61%
+[FedAvgM] Round 430/500 - Avg Local Loss: 0.4362, Test Loss: 0.6018, Test Acc: 79.51%
+[FedAvgM] Round 440/500 - Avg Local Loss: 0.3849, Test Loss: 0.6061, Test Acc: 79.00%
+[FedAvgM] Round 450/500 - Avg Local Loss: 0.4466, Test Loss: 0.5836, Test Acc: 79.81%
+[FedAvgM] Round 460/500 - Avg Local Loss: 0.3671, Test Loss: 0.5710, Test Acc: 80.77%
+[FedAvgM] Round 470/500 - Avg Local Loss: 0.3907, Test Loss: 0.5736, Test Acc: 80.66%
+[FedAvgM] Round 480/500 - Avg Local Loss: 0.3802, Test Loss: 0.6092, Test Acc: 79.44%
+[FedAvgM] Round 490/500 - Avg Local Loss: 0.3936, Test Loss: 0.6530, Test Acc: 78.41%
+[FedAvgM] Round 500/500 - Avg Local Loss: 0.3803, Test Loss: 0.6281, Test Acc: 78.56%

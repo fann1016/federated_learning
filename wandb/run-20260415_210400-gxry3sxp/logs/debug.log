@@ -1,0 +1,42 @@
+2026-04-15 21:04:00,183 INFO    MainThread:24904 [wandb_setup.py:_flush():81] Current SDK version is 0.25.1
+2026-04-15 21:04:00,183 INFO    MainThread:24904 [wandb_setup.py:_flush():81] Configure stats pid to 24904
+2026-04-15 21:04:00,183 INFO    MainThread:24904 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-15 21:04:00,183 INFO    MainThread:24904 [wandb_init.py:setup_run_log_directory():717] Logging user logs to D:\研究生学习\论文-联邦学习\联邦学习代码\wandb\run-20260415_210400-gxry3sxp\logs\debug.log
+2026-04-15 21:04:00,184 INFO    MainThread:24904 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to D:\研究生学习\论文-联邦学习\联邦学习代码\wandb\run-20260415_210400-gxry3sxp\logs\debug-internal.log
+2026-04-15 21:04:00,184 INFO    MainThread:24904 [wandb_init.py:init():844] calling init triggers
+2026-04-15 21:04:00,184 INFO    MainThread:24904 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'num_clients': 10, 'fraction': 0.4, 'local_epochs': 1, 'batch_size': 32, 'lr': 0.01, 'optimizer_momentum': 0.9, 'weight_decay': 0.0001, 'rounds': 300, 'eval_interval': 10, 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.1, 'server_momentum_beta': 0.9, 'nesterov': True, 'device': 'cpu', 'results_path': 'D:\\研究生学习\\论文-联邦学习\\联邦学习代码', 'data_path': 'C:/Users/Fnn/CascadeProjects/federated_learning_cifar10_mnist/data', 'wandb_project': 'federated-learning-cifar10', 'wandb_name': 'cifar10-dirichlet', 'lr_decay': 0.992, 'lr_decay_step': 1, '_wandb': {}}
+2026-04-15 21:04:00,184 INFO    MainThread:24904 [wandb_init.py:init():892] starting backend
+2026-04-15 21:04:02,619 INFO    MainThread:24904 [wandb_init.py:init():895] sending inform_init request
+2026-04-15 21:04:03,899 WARNING MainThread:24904 [wandb_init.py:init():1587] [no run ID] interrupted
+Traceback (most recent call last):
+  File "D:\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 1578, in init
+    run = wi.init(run_settings, run_config, run_printer)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\site-packages\wandb\sdk\wandb_init.py", line 897, in init
+    settings=settings.to_proto(),
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\site-packages\wandb\sdk\wandb_settings.py", line 1986, in to_proto
+    for k, v in self.model_dump(exclude_none=True).items():
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\site-packages\pydantic\main.py", line 463, in model_dump
+    return self.__pydantic_serializer__.to_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\site-packages\wandb\sdk\wandb_settings.py", line 1565, in _os
+    return platform.platform(aliased=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\platform.py", line 1259, in platform
+    rel, vers, csd, ptype = win32_ver(version)
+                            ^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\platform.py", line 449, in win32_ver
+    version, csd, ptype, is_client = _win32_ver(version, csd, ptype)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\platform.py", line 387, in _win32_ver
+    (version, product_type, ptype, spmajor, spminor)  = _wmi_query(
+                                                        ^^^^^^^^^^^
+  File "D:\Python\Python312\Lib\platform.py", line 327, in _wmi_query
+    data = _wmi.exec_query("SELECT {} FROM {}".format(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-04-15 21:04:03,989 INFO    wandb-AsyncioManager-main:24904 [service_client.py:_forward_responses():134] Reached EOF.
+2026-04-15 21:04:03,991 INFO    wandb-AsyncioManager-main:24904 [mailbox.py:close():155] Closing mailbox, abandoning 0 handles.

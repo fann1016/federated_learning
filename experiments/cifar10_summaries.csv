@@ -1,0 +1,5 @@
+timestamp,algorithm,seed,num_clients,fraction,local_epochs,batch_size,lr,server_momentum_beta,effective_lr,alpha,best_test_accuracy,final_test_accuracy,final_test_loss,log_file,plot_file
+20260417_174137,FedAvgM,2024,10,0.1,1,64,0.01,0.9,0.10000000000000002,0.5,10.0,10.0,2.6098126594543456,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_174137.txt,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_174137_results.png
+20260417_174840,FedAvgM,2024,100,0.1,1,64,0.01,0.9,0.10000000000000002,0.5,80.77,78.56,0.6280800185203552,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_174840.txt,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_174840_results.png
+20260417_183607,FedAvgM,2024,100,0.1,1,64,0.01,0.9,0.10000000000000002,0.5,83.8,83.26,0.5445943440437316,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_183607.txt,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_183607_results.png
+20260417_200910,FedAvgM,2024,100,0.1,1,64,0.01,0.9,0.10000000000000002,0.5,84.25,83.64,0.5821143931865692,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_200910.txt,D:\论文-联邦学习\联邦学习代码\experiments\FedAvgM_run1_20260417_200910_results.png

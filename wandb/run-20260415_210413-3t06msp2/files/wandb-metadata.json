@@ -1,0 +1,24 @@
+{
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "CPython 3.12.7",
+  "startedAt": "2026-04-15T13:04:13.434176Z",
+  "program": "d:\\研究生学习\\论文-联邦学习\\联邦学习代码\\examples\\run_cifar10.py",
+  "codePath": "examples\\run_cifar10.py",
+  "codePathLocal": "examples\\run_cifar10.py",
+  "email": "fann2025@lzu.edu.cn",
+  "root": "D:\\研究生学习\\论文-联邦学习\\联邦学习代码",
+  "host": "DESKTOP-7NVS1P4",
+  "executable": "D:\\Python\\Python312\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "297238786048",
+      "used": "189874262016"
+    }
+  },
+  "memory": {
+    "total": "16805056512"
+  },
+  "writerId": "6t38obieiilc4fcqvmrenhx0fqf5w36h"
+}

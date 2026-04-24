@@ -1,0 +1,29 @@
+[FedAvgM] Round 10/300 - Avg Local Loss: 0.9278, Test Loss: 1.8959, Test Acc: 42.75%
+[FedAvgM] Round 20/300 - Avg Local Loss: 0.9160, Test Loss: 2.3735, Test Acc: 39.29%
+[FedAvgM] Round 30/300 - Avg Local Loss: 0.7766, Test Loss: 1.3769, Test Acc: 56.39%
+[FedAvgM] Round 40/300 - Avg Local Loss: 0.7888, Test Loss: 1.8362, Test Acc: 44.36%
+[FedAvgM] Round 50/300 - Avg Local Loss: 0.7609, Test Loss: 2.5432, Test Acc: 40.79%
+[FedAvgM] Round 60/300 - Avg Local Loss: 0.6978, Test Loss: 1.8490, Test Acc: 49.07%
+[FedAvgM] Round 70/300 - Avg Local Loss: 0.6393, Test Loss: 1.1480, Test Acc: 62.05%
+[FedAvgM] Round 80/300 - Avg Local Loss: 0.7145, Test Loss: 1.3659, Test Acc: 60.04%
+[FedAvgM] Round 90/300 - Avg Local Loss: 0.5239, Test Loss: 1.5193, Test Acc: 56.73%
+[FedAvgM] Round 100/300 - Avg Local Loss: 0.6370, Test Loss: 1.0995, Test Acc: 63.16%
+[FedAvgM] Round 110/300 - Avg Local Loss: 0.6485, Test Loss: 1.0861, Test Acc: 63.47%
+[FedAvgM] Round 120/300 - Avg Local Loss: 0.6812, Test Loss: 1.1967, Test Acc: 60.02%
+  Round 121, Training Client 2...
+Traceback (most recent call last):
+  File "d:\研究生学习\论文-联邦学习\联邦学习代码\examples\run_cifar10.py", line 160, in <module>
+    run_experiment()
+  File "d:\研究生学习\论文-联邦学习\联邦学习代码\examples\run_cifar10.py", line 108, in run_experiment
+    w, loss, size = clients[idx].train(copy.deepcopy(server.global_model))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\研究生学习\论文-联邦学习\联邦学习代码\src\federated\client.py", line 33, in train
+    loss.backward()
+  File "D:\Python\Python312\Lib\site-packages\torch\_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "D:\Python\Python312\Lib\site-packages\torch\autograd\__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "D:\Python\Python312\Lib\site-packages\torch\autograd\graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

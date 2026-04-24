@@ -1,0 +1,6 @@
+==================================================
+ALGORITHM: FedAvgM
+CONFIG SETTINGS: {'num_clients': 10, 'fraction': 0.4, 'local_epochs': 1, 'batch_size': 64, 'lr': 0.01, 'optimizer_momentum': 0.9, 'weight_decay': 0.0004, 'rounds': 300, 'eval_interval': 10, 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.5, 'server_momentum_beta': 0.9, 'nesterov': True, 'device': 'cpu', 'results_path': 'D:\\研究生学习\\论文-联邦学习\\联邦学习代码', 'data_path': 'C:/Users/Fnn/CascadeProjects/federated_learning_cifar10_mnist/data', 'wandb_project': 'federated-learning-cifar10', 'wandb_name': 'cifar10-fedavgm-paper-aligned', 'seed': 2024}
+TIMESTAMP: 20260416_101054
+==================================================
+
