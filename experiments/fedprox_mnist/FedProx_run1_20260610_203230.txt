@@ -1,0 +1,8 @@
+============================================================
+ALGORITHM: FedProx
+PAPER: FedProx (MLSys 2020)
+CONFIG: {'device': 'cpu', 'seed': 0, 'show_plots': False, 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'optimizer_momentum': 0.0, 'server_momentum_beta': 0.0, 'server_nesterov': False, 'client_nesterov': False, 'participation_mode': 'fixed', 'lr_decay_per_round': True, 'algorithm': 'FedProx', 'paper': 'FedProx (MLSys 2020)', 'dataset_name': 'MNIST_FEDPROX', 'partition_method': 'fedprox_mnist', 'model_name': 'mnist_logistic', 'num_classes': 10, 'num_clients': 1000, 'clients_per_round': 10, 'local_epochs': 20, 'batch_size': 10, 'lr': 0.01, 'lr_decay': 1.0, 'mu': 0.01, 'client_train_frac': 0.9, 'drop_percent': 0.0, 'weight_decay': 0.0, 'server_lr': 1.0, 'paper_rounds': 200, 'rounds': 1, 'eval_interval': 1, 'experiments_subdir': 'fedprox_mnist', 'run_prefix': 'mnist_fedprox', 'wandb_project': 'federated-learning-fedprox-paper', 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\mnist_fedprox_summaries.csv'}
+TIMESTAMP: 20260610_203230
+============================================================
+
+[FedProx] Round 1/1 - Participants: 10, Avg Local Loss: 0.4494, Test Loss: 2.0550, Test Acc: 30.90%

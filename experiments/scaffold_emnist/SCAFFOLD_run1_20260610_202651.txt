@@ -1,0 +1,47 @@
+============================================================
+ALGORITHM: SCAFFOLD
+PAPER: SCAFFOLD (ICML 2020) — EMNIST logistic regression
+CONFIG: {'device': 'cpu', 'seed': 0, 'show_plots': False, 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'optimizer_momentum': 0.0, 'server_momentum_beta': 0.0, 'server_nesterov': False, 'client_nesterov': False, 'participation_mode': 'fixed', 'lr_decay_per_round': True, 'algorithm': 'SCAFFOLD', 'paper': 'SCAFFOLD (ICML 2020) — EMNIST logistic regression', 'dataset_name': 'EMNIST', 'emnist_split': 'byclass', 'partition_method': 'emnist_similarity', 'similarity_frac': 0.0, 'model_name': 'emnist_logistic', 'num_classes': 62, 'num_clients': 100, 'clients_per_round': 20, 'local_steps': 5, 'batch_frac': 0.2, 'eval_batch_size': 256, 'local_epochs': 1, 'lr': 1.0, 'lr_decay': 1.0, 'weight_decay': 0.0, 'server_lr': 1.0, 'scaffold_control_option': 'II', 'target_accuracy': 50.0, 'paper_rounds': 1000, 'rounds': 200, 'eval_interval': 5, 'experiments_subdir': 'scaffold_emnist', 'run_prefix': 'emnist_scaffold', 'wandb_project': 'federated-learning-scaffold-paper', 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\emnist_scaffold_summaries.csv'}
+TIMESTAMP: 20260610_202651
+============================================================
+
+[SCAFFOLD] Round 5/200 - Participants: 20, Avg Local Loss: 10.1172, Test Loss: 32.5096, Test Acc: 20.90%
+[SCAFFOLD] Round 10/200 - Participants: 20, Avg Local Loss: 27.2815, Test Loss: 16.8687, Test Acc: 38.92%
+[SCAFFOLD] Round 15/200 - Participants: 20, Avg Local Loss: 32.6707, Test Loss: 14.3062, Test Acc: 49.32%
+[SCAFFOLD] Round 20/200 - Participants: 20, Avg Local Loss: 33.5831, Test Loss: 13.8726, Test Acc: 53.55%
+[SCAFFOLD] Round 25/200 - Participants: 20, Avg Local Loss: 29.7775, Test Loss: 13.5661, Test Acc: 56.49%
+[SCAFFOLD] Round 30/200 - Participants: 20, Avg Local Loss: 24.8890, Test Loss: 13.4918, Test Acc: 57.53%
+[SCAFFOLD] Round 35/200 - Participants: 20, Avg Local Loss: 28.2416, Test Loss: 14.6362, Test Acc: 57.94%
+[SCAFFOLD] Round 40/200 - Participants: 20, Avg Local Loss: 25.2638, Test Loss: 13.7712, Test Acc: 60.13%
+[SCAFFOLD] Round 45/200 - Participants: 20, Avg Local Loss: 27.8252, Test Loss: 13.2981, Test Acc: 60.82%
+[SCAFFOLD] Round 50/200 - Participants: 20, Avg Local Loss: 34.8160, Test Loss: 14.0634, Test Acc: 60.08%
+[SCAFFOLD] Round 55/200 - Participants: 20, Avg Local Loss: 28.1388, Test Loss: 13.1001, Test Acc: 61.45%
+[SCAFFOLD] Round 60/200 - Participants: 20, Avg Local Loss: 22.3941, Test Loss: 12.6468, Test Acc: 61.94%
+[SCAFFOLD] Round 65/200 - Participants: 20, Avg Local Loss: 27.4438, Test Loss: 12.3538, Test Acc: 62.71%
+[SCAFFOLD] Round 70/200 - Participants: 20, Avg Local Loss: 26.8789, Test Loss: 12.2855, Test Acc: 62.43%
+[SCAFFOLD] Round 75/200 - Participants: 20, Avg Local Loss: 23.6698, Test Loss: 12.0795, Test Acc: 63.62%
+[SCAFFOLD] Round 80/200 - Participants: 20, Avg Local Loss: 28.6728, Test Loss: 12.3412, Test Acc: 63.87%
+[SCAFFOLD] Round 85/200 - Participants: 20, Avg Local Loss: 32.5531, Test Loss: 12.4369, Test Acc: 63.99%
+[SCAFFOLD] Round 90/200 - Participants: 20, Avg Local Loss: 28.5851, Test Loss: 12.2615, Test Acc: 64.29%
+[SCAFFOLD] Round 95/200 - Participants: 20, Avg Local Loss: 23.1671, Test Loss: 12.7223, Test Acc: 63.87%
+[SCAFFOLD] Round 100/200 - Participants: 20, Avg Local Loss: 25.3737, Test Loss: 13.1816, Test Acc: 63.93%
+[SCAFFOLD] Round 105/200 - Participants: 20, Avg Local Loss: 27.7587, Test Loss: 13.8115, Test Acc: 63.39%
+[SCAFFOLD] Round 110/200 - Participants: 20, Avg Local Loss: 27.5253, Test Loss: 13.0412, Test Acc: 64.61%
+[SCAFFOLD] Round 115/200 - Participants: 20, Avg Local Loss: 31.7555, Test Loss: 13.4843, Test Acc: 64.61%
+[SCAFFOLD] Round 120/200 - Participants: 20, Avg Local Loss: 30.8532, Test Loss: 13.5027, Test Acc: 64.90%
+[SCAFFOLD] Round 125/200 - Participants: 20, Avg Local Loss: 40.3460, Test Loss: 13.9962, Test Acc: 64.70%
+[SCAFFOLD] Round 130/200 - Participants: 20, Avg Local Loss: 29.8702, Test Loss: 14.0439, Test Acc: 64.90%
+[SCAFFOLD] Round 135/200 - Participants: 20, Avg Local Loss: 42.2551, Test Loss: 13.9995, Test Acc: 64.87%
+[SCAFFOLD] Round 140/200 - Participants: 20, Avg Local Loss: 32.7541, Test Loss: 13.3709, Test Acc: 65.22%
+[SCAFFOLD] Round 145/200 - Participants: 20, Avg Local Loss: 26.9544, Test Loss: 13.0024, Test Acc: 65.23%
+[SCAFFOLD] Round 150/200 - Participants: 20, Avg Local Loss: 36.2797, Test Loss: 13.1845, Test Acc: 65.51%
+[SCAFFOLD] Round 155/200 - Participants: 20, Avg Local Loss: 38.6830, Test Loss: 13.3165, Test Acc: 65.47%
+[SCAFFOLD] Round 160/200 - Participants: 20, Avg Local Loss: 46.9503, Test Loss: 12.9044, Test Acc: 65.53%
+[SCAFFOLD] Round 165/200 - Participants: 20, Avg Local Loss: 28.3436, Test Loss: 13.3157, Test Acc: 65.86%
+[SCAFFOLD] Round 170/200 - Participants: 20, Avg Local Loss: 26.9994, Test Loss: 12.8627, Test Acc: 65.89%
+[SCAFFOLD] Round 175/200 - Participants: 20, Avg Local Loss: 27.3177, Test Loss: 12.9578, Test Acc: 66.12%
+[SCAFFOLD] Round 180/200 - Participants: 20, Avg Local Loss: 31.6729, Test Loss: 13.0498, Test Acc: 66.34%
+[SCAFFOLD] Round 185/200 - Participants: 20, Avg Local Loss: 19.8687, Test Loss: 12.4886, Test Acc: 66.30%
+[SCAFFOLD] Round 190/200 - Participants: 20, Avg Local Loss: 33.1930, Test Loss: 13.3237, Test Acc: 66.29%
+[SCAFFOLD] Round 195/200 - Participants: 20, Avg Local Loss: 43.0018, Test Loss: 13.4946, Test Acc: 65.91%
+[SCAFFOLD] Round 200/200 - Participants: 20, Avg Local Loss: 26.6534, Test Loss: 13.6022, Test Acc: 66.70%

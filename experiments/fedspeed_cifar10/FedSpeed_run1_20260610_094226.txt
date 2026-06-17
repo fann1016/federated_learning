@@ -1,0 +1,37 @@
+============================================================
+ALGORITHM: FedSpeed
+PAPER: FedSpeed (ICLR 2023) — CIFAR-10 Setting I
+CONFIG: {'device': 'cpu', 'seed': 0, 'show_plots': False, 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'optimizer_momentum': 0.0, 'server_momentum_beta': 0.0, 'server_nesterov': False, 'client_nesterov': False, 'participation_mode': 'probabilistic', 'lr_decay_per_round': True, 'algorithm': 'FedSpeed', 'paper': 'FedSpeed (ICLR 2023) — CIFAR-10 Setting I', 'dataset_name': 'CIFAR10', 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.6, 'model_name': 'resnet18_gn', 'num_classes': 10, 'num_clients': 100, 'participation_prob': 0.1, 'local_epochs': 5, 'batch_size': 50, 'lr': 0.1, 'lr_decay': 0.9995, 'lamb': 0.1, 'sam_rho': 0.1, 'sam_alpha': 1.0, 'grad_clip_norm': 10.0, 'weight_decay': 0.001, 'server_lr': 1.0, 'paper_rounds': 1500, 'rounds': 500, 'eval_interval': 10, 'experiments_subdir': 'fedspeed_cifar10', 'run_prefix': 'cifar10_fedspeed', 'wandb_project': 'federated-learning-fedspeed-paper', 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\cifar10_fedspeed_summaries.csv'}
+TIMESTAMP: 20260610_094226
+============================================================
+
+[FedSpeed] Round 10/500 - Participants: 9, Avg Local Loss: -759.6327, Test Loss: 2.2236, Test Acc: 13.16%
+[FedSpeed] Round 20/500 - Participants: 12, Avg Local Loss: -560.6807, Test Loss: 1.9257, Test Acc: 27.85%
+[FedSpeed] Round 30/500 - Participants: 10, Avg Local Loss: -433.0700, Test Loss: 1.7825, Test Acc: 34.50%
+[FedSpeed] Round 40/500 - Participants: 7, Avg Local Loss: -324.3640, Test Loss: 1.7035, Test Acc: 36.31%
+[FedSpeed] Round 50/500 - Participants: 10, Avg Local Loss: -238.3980, Test Loss: 1.6304, Test Acc: 39.87%
+[FedSpeed] Round 60/500 - Participants: 5, Avg Local Loss: -180.1591, Test Loss: 1.5635, Test Acc: 43.68%
+[FedSpeed] Round 70/500 - Participants: 10, Avg Local Loss: -141.0463, Test Loss: 1.4610, Test Acc: 46.47%
+[FedSpeed] Round 80/500 - Participants: 10, Avg Local Loss: -111.1114, Test Loss: 1.3659, Test Acc: 50.61%
+[FedSpeed] Round 90/500 - Participants: 13, Avg Local Loss: -89.5628, Test Loss: 1.3594, Test Acc: 50.86%
+[FedSpeed] Round 100/500 - Participants: 12, Avg Local Loss: -75.2475, Test Loss: 1.2880, Test Acc: 53.51%
+[FedSpeed] Round 110/500 - Participants: 9, Avg Local Loss: -66.0439, Test Loss: 1.2610, Test Acc: 54.39%
+[FedSpeed] Round 120/500 - Participants: 12, Avg Local Loss: -59.3790, Test Loss: 1.1403, Test Acc: 59.66%
+[FedSpeed] Round 130/500 - Participants: 15, Avg Local Loss: -54.7547, Test Loss: 1.1070, Test Acc: 59.92%
+[FedSpeed] Round 140/500 - Participants: 8, Avg Local Loss: -51.5410, Test Loss: 1.0450, Test Acc: 63.05%
+[FedSpeed] Round 150/500 - Participants: 10, Avg Local Loss: -49.4266, Test Loss: 1.0187, Test Acc: 63.75%
+[FedSpeed] Round 160/500 - Participants: 9, Avg Local Loss: -48.0282, Test Loss: 0.9713, Test Acc: 66.74%
+[FedSpeed] Round 170/500 - Participants: 17, Avg Local Loss: -47.3584, Test Loss: 0.9247, Test Acc: 67.26%
+[FedSpeed] Round 180/500 - Participants: 6, Avg Local Loss: -47.0346, Test Loss: 0.8961, Test Acc: 68.91%
+[FedSpeed] Round 190/500 - Participants: 10, Avg Local Loss: -46.9691, Test Loss: 0.8530, Test Acc: 70.19%
+[FedSpeed] Round 200/500 - Participants: 10, Avg Local Loss: -47.1406, Test Loss: 0.8223, Test Acc: 71.75%
+[FedSpeed] Round 210/500 - Participants: 10, Avg Local Loss: -47.3800, Test Loss: 0.8069, Test Acc: 72.53%
+[FedSpeed] Round 220/500 - Participants: 6, Avg Local Loss: -47.7070, Test Loss: 0.7803, Test Acc: 73.52%
+[FedSpeed] Round 230/500 - Participants: 10, Avg Local Loss: -48.2149, Test Loss: 0.7617, Test Acc: 73.67%
+[FedSpeed] Round 240/500 - Participants: 6, Avg Local Loss: -48.5447, Test Loss: 0.7086, Test Acc: 76.20%
+[FedSpeed] Round 250/500 - Participants: 12, Avg Local Loss: -48.8564, Test Loss: 0.7011, Test Acc: 76.53%
+[FedSpeed] Round 260/500 - Participants: 7, Avg Local Loss: -49.2319, Test Loss: 0.6679, Test Acc: 77.61%
+[FedSpeed] Round 270/500 - Participants: 6, Avg Local Loss: -49.5868, Test Loss: 0.6459, Test Acc: 78.25%
+[FedSpeed] Round 280/500 - Participants: 6, Avg Local Loss: -49.8696, Test Loss: 0.6154, Test Acc: 79.45%
+[FedSpeed] Round 290/500 - Participants: 19, Avg Local Loss: -50.0963, Test Loss: 0.5827, Test Acc: 80.74%
+[FedSpeed] Round 300/500 - Participants: 12, Avg Local Loss: -50.3017, Test Loss: 0.5571, Test Acc: 81.82%

@@ -1,0 +1,7 @@
+============================================================
+ALGORITHM: SCAFFOLD
+PAPER: SCAFFOLD (ICML 2020) — EMNIST logistic regression
+CONFIG: {'device': 'cpu', 'seed': 0, 'show_plots': False, 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'optimizer_momentum': 0.0, 'server_momentum_beta': 0.0, 'server_nesterov': False, 'client_nesterov': False, 'participation_mode': 'fixed', 'algorithm': 'SCAFFOLD', 'paper': 'SCAFFOLD (ICML 2020) — EMNIST logistic regression', 'dataset_name': 'EMNIST', 'emnist_split': 'byclass', 'partition_method': 'emnist_similarity', 'similarity_frac': 0.0, 'model_name': 'emnist_logistic', 'num_classes': 62, 'num_clients': 100, 'clients_per_round': 20, 'participation_prob': 0.2, 'local_steps': 5, 'batch_frac': 0.2, 'local_epochs': 1, 'lr': 1.0, 'lr_decay': 1.0, 'weight_decay': 0.0, 'server_lr': 1.0, 'paper_rounds': 1000, 'rounds': 1, 'eval_interval': 1, 'experiments_subdir': 'scaffold_emnist', 'run_prefix': 'emnist_scaffold', 'wandb_project': 'federated-learning-scaffold-paper', 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\emnist_scaffold_summaries.csv'}
+TIMESTAMP: 20260609_094925
+============================================================
+

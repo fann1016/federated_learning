@@ -1,0 +1,27 @@
+============================================================
+ALGORITHM: FedCM
+PAPER: FedCM (arXiv:2106.10874) — CIFAR-10 Setting I
+CONFIG: {'device': 'cpu', 'seed': 0, 'show_plots': False, 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'optimizer_momentum': 0.0, 'server_momentum_beta': 0.0, 'server_nesterov': False, 'client_nesterov': False, 'participation_mode': 'probabilistic', 'lr_decay_per_round': True, 'algorithm': 'FedCM', 'paper': 'FedCM (arXiv:2106.10874) — CIFAR-10 Setting I', 'dataset_name': 'CIFAR10', 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.6, 'model_name': 'resnet18_gn', 'num_classes': 10, 'num_clients': 100, 'participation_prob': 0.1, 'local_epochs': 5, 'batch_size': 50, 'lr': 0.1, 'lr_decay': 0.998, 'fedcm_alpha': 0.1, 'weight_decay': 0.001, 'server_lr': 1.0, 'paper_rounds': 4000, 'rounds': 200, 'eval_interval': 10, 'experiments_subdir': 'fedcm_cifar10', 'run_prefix': 'cifar10_fedcm', 'wandb_project': 'federated-learning-fedcm-paper', 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\cifar10_fedcm_summaries.csv'}
+TIMESTAMP: 20260609_113255
+============================================================
+
+[FedCM] Round 10/200 - Participants: 9, Avg Local Loss: 1.2849, Test Loss: 1.5316, Test Acc: 45.31%
+[FedCM] Round 20/200 - Participants: 12, Avg Local Loss: 1.0347, Test Loss: 1.2298, Test Acc: 55.63%
+[FedCM] Round 30/200 - Participants: 10, Avg Local Loss: 0.8402, Test Loss: 1.0992, Test Acc: 60.86%
+[FedCM] Round 40/200 - Participants: 7, Avg Local Loss: 0.7301, Test Loss: 1.0288, Test Acc: 64.31%
+[FedCM] Round 50/200 - Participants: 10, Avg Local Loss: 0.6649, Test Loss: 0.9187, Test Acc: 68.28%
+[FedCM] Round 60/200 - Participants: 5, Avg Local Loss: 0.4888, Test Loss: 0.9396, Test Acc: 69.31%
+[FedCM] Round 70/200 - Participants: 10, Avg Local Loss: 0.3978, Test Loss: 0.7987, Test Acc: 73.46%
+[FedCM] Round 80/200 - Participants: 10, Avg Local Loss: 0.3973, Test Loss: 0.7264, Test Acc: 76.00%
+[FedCM] Round 90/200 - Participants: 13, Avg Local Loss: 0.2633, Test Loss: 0.7568, Test Acc: 76.21%
+[FedCM] Round 100/200 - Participants: 12, Avg Local Loss: 0.2553, Test Loss: 0.7057, Test Acc: 77.50%
+[FedCM] Round 110/200 - Participants: 9, Avg Local Loss: 0.2195, Test Loss: 0.7582, Test Acc: 77.04%
+[FedCM] Round 120/200 - Participants: 12, Avg Local Loss: 0.2187, Test Loss: 0.6711, Test Acc: 79.75%
+[FedCM] Round 130/200 - Participants: 15, Avg Local Loss: 0.2067, Test Loss: 0.7046, Test Acc: 79.28%
+[FedCM] Round 140/200 - Participants: 8, Avg Local Loss: 0.1942, Test Loss: 0.6417, Test Acc: 80.53%
+[FedCM] Round 150/200 - Participants: 10, Avg Local Loss: 0.1700, Test Loss: 0.6600, Test Acc: 80.69%
+[FedCM] Round 160/200 - Participants: 9, Avg Local Loss: 0.1311, Test Loss: 0.6517, Test Acc: 81.14%
+[FedCM] Round 170/200 - Participants: 17, Avg Local Loss: 0.1571, Test Loss: 0.6657, Test Acc: 80.69%
+[FedCM] Round 180/200 - Participants: 6, Avg Local Loss: 0.0989, Test Loss: 0.6367, Test Acc: 82.02%
+[FedCM] Round 190/200 - Participants: 10, Avg Local Loss: 0.1262, Test Loss: 0.6304, Test Acc: 81.66%
+[FedCM] Round 200/200 - Participants: 10, Avg Local Loss: 0.1097, Test Loss: 0.6485, Test Acc: 82.06%

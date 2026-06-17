@@ -1,0 +1,7 @@
+============================================================
+ALGORITHM: FedCM
+PAPER: FedCM (arXiv:2106.10874) — CIFAR-10 Setting I
+CONFIG: {'device': 'cpu', 'seed': 0, 'show_plots': False, 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': '.\\data_clean', 'optimizer_momentum': 0.0, 'server_momentum_beta': 0.0, 'server_nesterov': False, 'client_nesterov': False, 'participation_mode': 'probabilistic', 'lr_decay_per_round': True, 'algorithm': 'FedCM', 'paper': 'FedCM (arXiv:2106.10874) — CIFAR-10 Setting I', 'dataset_name': 'CIFAR10', 'partition_method': 'dirichlet', 'dirichlet_alpha': 0.6, 'model_name': 'resnet18_gn', 'num_classes': 10, 'num_clients': 100, 'participation_prob': 0.1, 'local_epochs': 5, 'batch_size': 50, 'lr': 0.1, 'lr_decay': 0.998, 'fedcm_alpha': 0.1, 'weight_decay': 0.001, 'server_lr': 1.0, 'paper_rounds': 4000, 'rounds': 200, 'eval_interval': 10, 'experiments_subdir': 'fedcm_cifar10', 'run_prefix': 'cifar10_fedcm', 'wandb_project': 'federated-learning-fedcm-paper', 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\cifar10_fedcm_summaries.csv'}
+TIMESTAMP: 20260610_201812
+============================================================
+

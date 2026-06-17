@@ -1,0 +1,8 @@
+============================================================
+ALGORITHM: FedCM
+CONFIG: {'algorithm': 'FedCM', 'dataset_name': 'MNIST_FEDPROX', 'partition_method': 'fedprox_mnist', 'num_clients': 1000, 'clients_per_round': 10, 'local_epochs': 20, 'batch_size': 10, 'lr': 0.03, 'fedcm_alpha': 0.1, 'lr_decay': 1.0, 'client_train_frac': 0.8, 'rounds': 2, 'eval_interval': 1, 'optimizer_momentum': 0.0, 'weight_decay': 0.001, 'server_momentum_beta': 0.0, 'server_lr': 1.0, 'server_nesterov': False, 'client_nesterov': False, 'device': 'cpu', 'results_path': 'D:\\论文-联邦学习\\联邦学习代码', 'data_path': 'D:\\论文-联邦学习\\联邦学习代码\\data', 'wandb_project': 'federated-learning-mnist-fedcm', 'wandb_name': 'mnist-fedcm-paper-setup', 'seed': 0, 'show_plots': False, 'summary_csv': 'D:\\论文-联邦学习\\联邦学习代码\\experiments\\mnist_fedcm_summaries.csv'}
+TIMESTAMP: 20260608_190859
+============================================================
+
+[FedCM] Round 1/2 - Avg Local Loss: 0.9828, Test Loss: 2.1874, Test Acc: 22.13%
+[FedCM] Round 2/2 - Avg Local Loss: 0.8757, Test Loss: 1.7707, Test Acc: 51.91%
