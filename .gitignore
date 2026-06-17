@@ -13,9 +13,16 @@ __pycache__/
 
 # experiment logs/results
 wandb/
-experiments/
 *.png
 *.txt
 
 # cleaned/local data
 data_clean/
+
+run_fedcm.ps1
+run_fedprox.bat
+run_fedprox.ps1
+run_fedspeed.ps1
+run_overnight.ps1
+run_scaffold.ps1
+setup_env.ps1

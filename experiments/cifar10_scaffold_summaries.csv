@@ -1,0 +1,2 @@
+timestamp,algorithm,paper,dataset,model,seed,num_clients,clients_per_round,local_epochs,batch_size,lr,lr_decay,rounds,best_test_accuracy,final_test_accuracy,final_test_loss,log_file,plot_file
+20260608_193431,SCAFFOLD,SCAFFOLD (ICML 2020) — CIFAR-10 Setting I,CIFAR10,resnet18_gn,0,100,10,5,50,0.1,0.998,1,10.0,10.0,2.4213347091674806,D:\论文-联邦学习\联邦学习代码\experiments\scaffold_cifar10\SCAFFOLD_run1_20260608_193431.txt,D:\论文-联邦学习\联邦学习代码\experiments\scaffold_cifar10\SCAFFOLD_run1_20260608_193431_results.png

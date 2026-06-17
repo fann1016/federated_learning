@@ -1,0 +1,5 @@
+timestamp,algorithm,fedcm_alpha,seed,num_clients,clients_per_round,local_epochs,batch_size,lr,rounds,best_test_accuracy,final_test_accuracy,final_test_loss,log_file,plot_file
+20260608_190859,FedCM,0.1,0,1000,10,20,10,0.03,2,51.91,51.91,1.7706650758743285,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_190859.txt,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_190859_results.png
+20260608_190926,FedCM,0.1,0,1000,10,20,10,0.03,200,89.99,89.44,0.3865019345906563,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_190926.txt,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_190926_results.png
+20260608_191114,FedCM,0.1,0,1000,10,20,10,0.03,2,51.91,51.91,1.7706650758743285,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_191114.txt,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_191114_results.png
+20260608_191133,FedCM,0.1,0,1000,10,20,10,0.03,200,89.99,89.44,0.3865019345906563,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_191133.txt,D:\论文-联邦学习\联邦学习代码\experiments\fedcm_mnist\FedCM_run1_20260608_191133_results.png
