@@ -3,3 +3,19 @@ cifar-10-batches-py/
 *.tar.gz
 *.zip
 !src/data/dataloader.py
+# Python cache
+__pycache__/
+*.pyc
+
+# virtual env
+.venv/
+.venv312/
+
+# experiment logs/results
+wandb/
+experiments/
+*.png
+*.txt
+
+# cleaned/local data
+data_clean/

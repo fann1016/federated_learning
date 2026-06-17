@@ -28,6 +28,31 @@ class SimpleCIFAR_CNN(nn.Module):
         x = self.fc3(x)
         return x
 
+class MNIST_LogisticRegression(nn.Module):
+    """Multinomial logistic regression for FedProx MNIST experiments (784 -> 10)."""
+
+    def __init__(self, num_classes=10):
+        super().__init__()
+        self.fc = nn.Linear(28 * 28, num_classes)
+
+    def forward(self, x):
+        return self.fc(x.view(x.size(0), -1))
+
+
+class EMNIST_MLP(nn.Module):
+    """2-layer fully connected network (SCAFFOLD paper Table 5, non-convex)."""
+
+    def __init__(self, num_classes=62, hidden_dim=200):
+        super().__init__()
+        self.fc1 = nn.Linear(28 * 28, hidden_dim)
+        self.fc2 = nn.Linear(hidden_dim, num_classes)
+
+    def forward(self, x):
+        x = x.view(x.size(0), -1)
+        x = F.relu(self.fc1(x))
+        return self.fc2(x)
+
+
 class SimpleMNIST_CNN(nn.Module):
     def __init__(self):
         super(SimpleMNIST_CNN, self).__init__()

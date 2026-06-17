@@ -39,16 +39,16 @@ BASE_CONFIG = {
     "partition_method": "dirichlet",
     "dirichlet_alpha": 0.5,
     "server_momentum_beta": 0.9,
-    "server_lr": 1.0,  # 服务器端更新步长
-    "server_nesterov": True, # 服务器端是否使用Nesterov动量
-    "client_nesterov": False, 
+    "server_lr": 1.0,
+    "server_nesterov": True,
+    "client_nesterov": False,
     "device": "cuda" if torch.cuda.is_available() else "cpu",
     "results_path": BASE_DIR,
     "data_path": DATA_DIR,
     "wandb_project": "federated-learning-cifar10",
     "wandb_name": "cifar10-fedavgm-paper-aligned",
-    "seed": 2024,  # 随机种子
-    "repeat_id": 0, # 实验重复ID
+    "seed": 2024,
+    "repeat_id": 0,
     "show_plots": False,
     "summary_csv": os.path.join(BASE_DIR, "experiments", "cifar10_summaries.csv"),
 }
@@ -108,8 +108,6 @@ def run_experiment(config_overrides=None):
 
     data_manager = DataLoaderManager(config)
     train_dataset, test_dataset = data_manager.load_data(dataset_name="CIFAR10")
-    
-    # 实现狄利克雷分布的核心
     user_groups = data_manager.partition_data(
         method=config["partition_method"],
         alpha=config.get("dirichlet_alpha", 0.5)
