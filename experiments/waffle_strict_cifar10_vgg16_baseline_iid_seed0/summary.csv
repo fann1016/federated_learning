@@ -1,0 +1,2 @@
+timestamp,algorithm,model,seed,num_clients,fraction,local_epochs,batch_size,lr,server_momentum_beta,effective_lr,alpha,best_test_accuracy,final_test_accuracy,final_test_loss,log_file,plot_file
+20260630_145653,FedAvg,waffle_cifar_vgg16_strict,0,100,0.1,1,64,0.0005,0.0,0.0005,0.5,76.98,76.98,0.666421226978302,D:\论文-联邦学习\联邦学习代码\experiments\waffle_strict_cifar10_vgg16_baseline_iid_seed0\FedAvg_run1_20260630_145653.txt,D:\论文-联邦学习\联邦学习代码\experiments\waffle_strict_cifar10_vgg16_baseline_iid_seed0\FedAvg_run1_20260630_145653_results.png

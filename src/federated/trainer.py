@@ -29,6 +29,22 @@ def _init_wandb(run_name, config):
     wandb.init(project=config["wandb_project"], name=run_name, config=config, mode=mode)
 
 
+def _safe_name(value):
+    return str(value).lower().replace("-", "").replace("_fedprox", "").replace(" ", "_")
+
+
+def _results_dir(config, algo_name):
+    experiment_group = config.get("experiment_group", "baseline")
+    dataset_name = _safe_name(config["dataset_name"])
+    algorithm_name = _safe_name(algo_name)
+    seed = int(config["seed"])
+    subdir = config.get(
+        "output_subdir",
+        f"{experiment_group}_{dataset_name}_{algorithm_name}_seed{seed}",
+    )
+    return os.path.join(config["results_path"], "experiments", subdir)
+
+
 def _select_clients(config, round_idx):
     num_clients = config["num_clients"]
     seed = int(config["seed"]) + round_idx
@@ -208,12 +224,10 @@ def run_paper_experiment(algorithm, overrides=None):
     print(f"Paper: {config.get('paper', 'N/A')}")
     print(f"Dataset: {config['dataset_name']} | Model: {config['model_name']}")
 
-    results_dir = os.path.join(
-        config["results_path"], "experiments", config["experiments_subdir"]
-    )
+    results_dir = _results_dir(config, algo_name)
     os.makedirs(results_dir, exist_ok=True)
 
-    run_num = get_next_run_number(results_dir, config["run_prefix"])
+    run_num = get_next_run_number(results_dir, algo_name)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     wandb_run_name = f"{algo_name}_run{run_num}_{timestamp}"
     log_filename = os.path.join(results_dir, f"{algo_name}_run{run_num}_{timestamp}.txt")
@@ -342,6 +356,7 @@ def run_paper_experiment(algorithm, overrides=None):
     if "sam_rho" in config:
         summary["sam_rho"] = config["sam_rho"]
 
-    append_metrics_row(config["summary_csv"], summary)
+    summary_csv = config.get("output_summary_csv") or os.path.join(results_dir, "summary.csv")
+    append_metrics_row(summary_csv, summary)
     wandb.finish()
     return summary

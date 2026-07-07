@@ -1,0 +1,2 @@
+timestamp,algorithm,dataset,model,seed,num_clients,fraction,local_epochs,batch_size,lr,rounds,best_test_accuracy,final_test_accuracy,final_test_loss,log_file,plot_file
+20260630_145040,FedAvg,MNIST,waffle_mnist_l5_strict,0,100,0.1,1,50,0.1,250,99.1,99.01,0.030333177593298025,D:\论文-联邦学习\联邦学习代码\experiments\waffle_strict_mnist_l5_baseline_iid_seed0\FedAvg_run1_20260630_145040.txt,D:\论文-联邦学习\联邦学习代码\experiments\waffle_strict_mnist_l5_baseline_iid_seed0\FedAvg_run1_20260630_145040_results.png

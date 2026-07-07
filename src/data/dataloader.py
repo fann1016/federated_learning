@@ -25,23 +25,47 @@ class DataLoaderManager:
 
     def load_data(self, dataset_name='CIFAR10'):
         if dataset_name in ('CIFAR10', 'CIFAR100'):
-            transform_train = transforms.Compose([
-                transforms.RandomCrop(32, padding=4),
-                transforms.RandomHorizontalFlip(),
-                transforms.ToTensor(),
-                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
-            ])
-            transform_test = transforms.Compose([
-                transforms.ToTensor(),
-                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
-            ])
+            if str(self.config.get("cifar_normalize", "")).lower() == "imagenet":
+                mean, std = (0.485, 0.456, 0.406), (0.229, 0.224, 0.225)
+            else:
+                mean, std = (0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)
+
+            if str(self.config.get("cifar_transform", "")).lower() == "waffle":
+                image_size = int(self.config.get("input_size", 32))
+                transform_train = transforms.Compose([
+                    transforms.Resize(image_size),
+                    transforms.CenterCrop(image_size),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean, std),
+                ])
+                transform_test = transforms.Compose([
+                    transforms.Resize(image_size),
+                    transforms.CenterCrop(image_size),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean, std),
+                ])
+            else:
+                transform_train = transforms.Compose([
+                    transforms.RandomCrop(32, padding=4),
+                    transforms.RandomHorizontalFlip(),
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean, std),
+                ])
+                transform_test = transforms.Compose([
+                    transforms.ToTensor(),
+                    transforms.Normalize(mean, std),
+                ])
             dataset_cls = datasets.CIFAR10 if dataset_name == 'CIFAR10' else datasets.CIFAR100
             self.train_dataset = dataset_cls(self.config["data_path"], train=True, download=True, transform=transform_train)
             self.test_dataset = dataset_cls(self.config["data_path"], train=False, download=True, transform=transform_test)
         elif dataset_name == 'MNIST':
+            if str(self.config.get("mnist_normalize", "")).lower() == "waffle":
+                mean, std = (0.5,), (0.5,)
+            else:
+                mean, std = (0.1307,), (0.3081,)
             transform = transforms.Compose([
                 transforms.ToTensor(),
-                transforms.Normalize((0.1307,), (0.3081,))
+                transforms.Normalize(mean, std)
             ])
             self.train_dataset = datasets.MNIST(self.config["data_path"], train=True, download=True, transform=transform)
             self.test_dataset = datasets.MNIST(self.config["data_path"], train=False, download=True, transform=transform)

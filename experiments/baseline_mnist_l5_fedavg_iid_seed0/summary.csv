@@ -1,0 +1,2 @@
+timestamp,algorithm,dataset,model,seed,num_clients,fraction,local_epochs,batch_size,lr,rounds,best_test_accuracy,final_test_accuracy,final_test_loss,log_file,plot_file
+20260630_101902,FedAvg,MNIST,mnist_l5,0,100,0.1,1,50,0.1,250,99.14,99.07,0.025997164572290784,D:\论文-联邦学习\联邦学习代码\experiments\baseline_mnist_l5_fedavg_iid_seed0\FedAvg_run2_20260630_101902.txt,D:\论文-联邦学习\联邦学习代码\experiments\baseline_mnist_l5_fedavg_iid_seed0\FedAvg_run2_20260630_101902_results.png

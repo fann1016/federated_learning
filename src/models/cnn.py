@@ -39,6 +39,43 @@ class MNIST_LogisticRegression(nn.Module):
         return self.fc(x.view(x.size(0), -1))
 
 
+class MNIST_L5(nn.Module):
+    """5-layer MNIST CNN used by the WAFFLE experiments."""
+
+    def __init__(self, num_classes=10, dropout=0.0):
+        super().__init__()
+        self.block = nn.Sequential(
+            nn.Conv2d(1, 32, 2),
+            nn.MaxPool2d(2),
+            nn.ReLU(),
+            nn.Conv2d(32, 64, 2),
+            nn.MaxPool2d(2),
+            nn.ReLU(),
+            nn.Conv2d(64, 128, 2),
+            nn.ReLU(),
+        )
+        self.fc1 = nn.Linear(128 * 5 * 5, 200)
+        self.fc2 = nn.Linear(200, num_classes)
+        self.relu = nn.ReLU()
+        self.dropout = nn.Dropout(p=dropout)
+
+    def forward(self, x):
+        x = self.dropout(x)
+        x = self.block(x)
+        x = x.view(-1, 128 * 5 * 5)
+        x = self.dropout(x)
+        x = self.relu(self.fc1(x))
+        x = self.dropout(x)
+        return self.fc2(x)
+
+
+class WAFFLE_MNIST_L5(MNIST_L5):
+    """WAFFLE source-compatible MNIST L5: log-probabilities for NLL loss."""
+
+    def forward(self, x):
+        return F.log_softmax(super().forward(x), dim=1)
+
+
 class EMNIST_MLP(nn.Module):
     """2-layer fully connected network (SCAFFOLD paper Table 5, non-convex)."""
 

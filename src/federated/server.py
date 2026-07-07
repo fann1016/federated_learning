@@ -202,15 +202,53 @@ class Server:
         self.global_model.load_state_dict(new_state)
 
     def evaluate(self, test_loader):
+        return self.evaluate_loader(test_loader)
+
+    def _criterion(self, output, target, reduction="mean"):
+        if str(self.config.get("loss_function", "")).lower() == "nll":
+            return F.nll_loss(output, target, reduction=reduction)
+        return F.cross_entropy(output, target, reduction=reduction)
+
+    def evaluate_loader(self, data_loader):
         self.global_model.eval()
         test_loss, correct = 0, 0
         with torch.no_grad():
-            for data, target in test_loader:
+            for data, target in data_loader:
                 data, target = data.to(self.device), target.to(self.device)
                 output = self.global_model(data)
-                test_loss += F.cross_entropy(output, target, reduction="sum").item()
+                test_loss += self._criterion(output, target, reduction="sum").item()
                 pred = output.argmax(dim=1, keepdim=True)
                 correct += pred.eq(target.view_as(pred)).sum().item()
-        test_loss /= len(test_loader.dataset)
-        accuracy = 100.0 * correct / len(test_loader.dataset)
+        test_loss /= len(data_loader.dataset)
+        accuracy = 100.0 * correct / len(data_loader.dataset)
         return test_loss, accuracy
+
+    def retrain_on_loader(
+        self,
+        data_loader,
+        lr,
+        max_epochs=100,
+        target_accuracy=98.0,
+        stop_on_target=True,
+    ):
+        optimizer = torch.optim.SGD(self.global_model.parameters(), lr=float(lr))
+        epochs_run = 0
+        last_loss, last_accuracy = self.evaluate_loader(data_loader)
+
+        for _ in range(int(max_epochs)):
+            if stop_on_target and last_accuracy >= float(target_accuracy):
+                break
+
+            self.global_model.train()
+            for data, target in data_loader:
+                data, target = data.to(self.device), target.to(self.device)
+                optimizer.zero_grad()
+                output = self.global_model(data)
+                loss = self._criterion(output, target)
+                loss.backward()
+                optimizer.step()
+
+            epochs_run += 1
+            last_loss, last_accuracy = self.evaluate_loader(data_loader)
+
+        return epochs_run, last_loss, last_accuracy

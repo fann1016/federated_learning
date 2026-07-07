@@ -181,6 +181,11 @@ class Client:
         lr_decay = float(config.get("lr_decay", 1.0))
         return base_lr * (lr_decay ** int(round_idx))
 
+    def _criterion(self, output, target, config):
+        if str(config.get("loss_function", "")).lower() == "nll":
+            return F.nll_loss(output, target)
+        return F.cross_entropy(output, target)
+
     def _prepare_global_anchor(self, global_state):
         if global_state is None:
             return None
@@ -366,7 +371,7 @@ class Client:
                 data, target = data.to(self.device), target.to(self.device)
                 optimizer.zero_grad()
                 output = model(data)
-                loss = F.cross_entropy(output, target)
+                loss = self._criterion(output, target, config)
 
                 if use_prox:
                     loss = loss + (mu / 2.0) * self._prox_penalty(model, global_anchor)

@@ -2,7 +2,7 @@ data/
 cifar-10-batches-py/
 *.tar.gz
 *.zip
-!src/data/dataloader.py
+#!src/data/dataloader.py
 # Python cache
 __pycache__/
 *.pyc
@@ -18,6 +18,11 @@ wandb/
 
 # cleaned/local data
 data_clean/
+
+.torch/
+
+*.pt
+*.pth
 
 run_fedcm.ps1
 run_fedprox.bat
